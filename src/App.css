@@ -1,0 +1,59 @@
+.cards_cont{
+  min-height: 900px; 
+  margin-top: 100px; 
+}
+  #footer{
+  position: absolute;
+  width: 100%;
+  background-color: darkgray;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.heart_icons{
+  width: 50px;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+.cart_icons{
+  width: 50px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.card-footer{
+text-align: center;
+}
+
+.card-footer:hover{
+  background-color: darkgray;
+  color: white;
+  }
+.price{
+  color: green;
+  text-align: center;
+  font-weight: bold;
+}
+.col{
+  margin-bottom: 50px;
+}
+
+.desc_link{
+  color: black;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  text-decoration: none;
+  color: white;
+}
+
