@@ -33,7 +33,7 @@ const onAddOverlay = async (obj)=>{
   return (
     <div>
       <div>
-        <h1 className='col-md-8 offset-md-2'>Избранные туры</h1>
+        <h1 className='col-md-8 offset-md-2'>Избранные товары</h1>
       </div>
     <div>
       {

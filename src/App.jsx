@@ -15,14 +15,14 @@ import Basket from './components/basket/Basket'
 import Descriptions from './components/Descriptions'
 import Description from './components/cart/Description'
 
-import { QueryClient, QueryClientProvider } from "react-query";
+// import { QueryClient, QueryClientProvider } from "react-query";
 
 export const AppContext = React.createContext({})
 
 
 function App() {
 
-  const queryClient = new QueryClient();
+  // const queryClient = new QueryClient();
 
     const [boxCards, setBoxCards] = useState([])
     const [cards, setCards] = useState([])
@@ -122,7 +122,7 @@ const isDesc=(myId)=>{
     </Router> 
     <Footer/>     
    </div>
-  //  </AppContext.Provider>
+  </AppContext.Provider>
   )
 }
 

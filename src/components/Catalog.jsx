@@ -1,5 +1,5 @@
 import React from 'react'
-import Cards from './cart/BoxCards';
+import Cards from './cart/Cards';
 import "../App.css";
 
 const catalog = (props) => {

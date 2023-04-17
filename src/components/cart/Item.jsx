@@ -41,9 +41,7 @@ const Item = (props) => {
   return (
     
      <div className="col">
-       <Card>
-       {/* <p className='box'>box - {props.box}</p> */}
-       
+       <Card>         
        <div className='cart_icons'>
           {
             context.isAdded(props.myId) == true ?
@@ -64,12 +62,12 @@ const Item = (props) => {
           <Card.Body>
             <Card.Title>{props.title}</Card.Title>   
             <Card.Text><p className='price'>{props.price} руб.</p></Card.Text>  
-            <Card.Text><p className='id'>id - {props.id}</p></Card.Text>  
-            <Card.Text><p className='box'>box - {props.box}</p></Card.Text>  
+            {/* <Card.Text><p className='id'>id - {props.id}</p></Card.Text>  
+            <Card.Text><p className='box'>box - {props.box}</p></Card.Text>   */}
           </Card.Body>     
-          <Link to={`/catalog/${props.box}/${props.myId}`}>
+          {/* <Link to={`/catalog/${props.box}/${props.myId}`}>
               <p className='card-footer desc_link'>Подробнее</p>
-            </Link>    
+            </Link>     */}
 
           {/* <a href="/catalog" class="card-footer">Подробнее</a>         */}
        </Card>           

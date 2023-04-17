@@ -5,6 +5,9 @@ const Basket = (props) => {
   return (
     <div>
       <div>
+        <h1 className='col-md-8 offset-md-2'>Корзина</h1>
+      </div>
+      <div>
         {
           props.overlayProp.length>0?
           <div>
