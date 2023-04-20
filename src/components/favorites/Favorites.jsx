@@ -31,43 +31,43 @@ const onAddOverlay = async (obj)=>{
 }
 
   return (
-    <div>
+    <div className='favor'>
       <div>
         <h1 className='col-md-8 offset-md-2'>Избранные товары</h1>
       </div>
-    <div>
-      {
-        props.favorites.map(obj =>{
-          return(
-            <Item
-            key={obj.id}
-            id={obj.id}
-            myId={obj.myId}
-            title={obj.title}
-            description={obj.description}
-            price={obj.price}
-            img={obj.img}
-            
-            onDeleteFav={
-              (id)=>{
-                onDeleteFav(id)
+      <div className='basket'>
+        <div className='row row-cols-1 justify-content-evenly row-cols-md-3 row-cols-sm-2 text-center basket_card'>
+          {
+            props.favorites.map(obj =>{
+              return(
+                <Item
+                key={obj.id}
+                id={obj.id}
+                myId={obj.myId}
+                title={obj.title}
+                description={obj.description}
+                price={obj.price}
+                img={obj.img}
+                
+                onDeleteFav={
+                  (id)=>{
+                    onDeleteFav(id)
+                  }
+                }
+
+                onPlus={(cartobj)=>{
+                  onAddOverlay(cartobj)
+                }
               }
-            }
+                />
 
-            onPlus={(cartobj)=>{
-              onAddOverlay(cartobj)
-            }
+              )
+            })
           }
-            />
-
-          )
-        })
-      }
-      
+          
+        </div>
+      </div>
     </div>
-
-    </div>
-
   )
 }
 

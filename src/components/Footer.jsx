@@ -7,11 +7,19 @@ const Footer = () => {
     <div>
       <footer id="footer" className='pt-4 border-top'>
         <Container>
-          <h1>footer</h1>          
-        </Container>
-      
-      </footer>
 
+          <div className='footer_contact'>
+            <p><img src="./img/geo.png" className='footer_logo'/> г. Челябинск, пр. Ленина, 35, офис 230</p> 
+            <p><img src="./img/email.png" className='footer_logo'/> frivalo.mebel@bk.ru</p>   
+            <p><img src="./img/phone.png" className='footer_logo'/> 8-800-000-00-00</p>
+          </div>    
+
+          <div className='footer_pay'>
+            <img src="./img/payment.png" className='footer_logo'/>
+          </div>  
+
+        </Container>      
+      </footer>
     </div>
   )
 }

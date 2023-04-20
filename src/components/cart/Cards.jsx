@@ -40,7 +40,7 @@ const Cards = (props) => {
   }
   
   return (
-       <div className="container py-3 cards_cont">
+    <div className="container py-3 cards_cont">
       <div className="row row-cols-1 row-cols-md-3 row-cols-sm-2 ry-3">   
         {
           props.item.map(obj=> {

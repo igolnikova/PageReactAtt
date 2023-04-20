@@ -1,11 +1,7 @@
 .cards_cont{
   min-height: 900px; 
   margin-top: 100px; 
-}
-  #footer{
-  position: absolute;
-  width: 100%;
-  background-color: darkgray;
+  
 }
 
 .card-title {
@@ -57,3 +53,61 @@ a:hover{
   color: white;
 }
 
+.logo{
+  height: 100px;
+}
+
+.header_link{
+  margin-right: 20px;
+}
+
+#footer{
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background-color: lightgrey;
+}
+
+.footer_contact{
+margin-top: 20px;
+display: inline-block;
+}
+.footer_logo{
+  height: 30px;
+}
+.footer_pay{
+  display: inline-block;
+  margin-top: 20px;
+  float: right;
+  margin-top: 70px;
+}
+
+.footer_pay>img{
+  height: 70px;
+}
+
+.favor{
+  min-height: 600px;  
+}
+.favor>div{
+  /* width: 100%; */
+  text-align: center;
+}
+.navbar{
+  opacity: 80%;
+}
+
+.itog{
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.basket{ 
+  margin-top: 50px;
+}
+
+.basket_card{
+  min-height: 500px;
+  width: 90%;
+  margin: auto;
+}

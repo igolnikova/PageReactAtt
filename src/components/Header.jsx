@@ -4,22 +4,19 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Button } from 'react-bootstrap';
 import {Link} from 'react-router-dom';
+import "../App.css";
 
 const Header = () => {
   return (
     <div>
-       <Navbar bg="dark" variant="dark">
+       <Navbar className='navbar' bg="dark" variant="dark">      
         <Container>
-          <Navbar.Brand><Link to={'/'}>Логотип</Link></Navbar.Brand>
+          <Navbar.Brand><Link to={'/'}><img src="./img/logotype.png" className='logo'/></Link></Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link><Link to={'/'}>Главная</Link></Nav.Link>
-            {/* <Nav.Link><Link to={'/catalog'}>Каталог</Link></Nav.Link> */}
-            <Nav.Link><Link to={'/stocks'}>Акции</Link></Nav.Link>
-            <Nav.Link><Link to={'/reviews'}>Отзывы</Link></Nav.Link>
-            <Nav.Link> <Link to={'/favorites'}>Избранное</Link></Nav.Link>
-            <Nav.Link><Link to={'/cart'}>Корзина</Link></Nav.Link>
-            {/* <Nav.Link><Link to={'/description'}>Описание</Link></Nav.Link> */}
-          </Nav>
+            <Nav.Link className='header_link'><Link to={'/'}>Главная</Link></Nav.Link>
+            <Nav.Link className='header_link'> <Link to={'/favorites'}>Избранное</Link></Nav.Link>
+            <Nav.Link className='header_link'><Link to={'/cart'}>Корзина</Link></Nav.Link>
+           </Nav>
           <Nav>
             <Button variant="dark">
               Войти

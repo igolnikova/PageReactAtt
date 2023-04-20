@@ -1,7 +1,6 @@
 import React from 'react'
 import "../../App.css";
 import Card from 'react-bootstrap/Card';
-import {Link} from 'react-router-dom';
 import { useState } from 'react'
 import { AppContext } from '../../App';
 
@@ -61,15 +60,8 @@ const Item = (props) => {
           <Card.Img variant="top" src={props.img} />
           <Card.Body>
             <Card.Title>{props.title}</Card.Title>   
-            <Card.Text><p className='price'>{props.price} руб.</p></Card.Text>  
-            {/* <Card.Text><p className='id'>id - {props.id}</p></Card.Text>  
-            <Card.Text><p className='box'>box - {props.box}</p></Card.Text>   */}
-          </Card.Body>     
-          {/* <Link to={`/catalog/${props.box}/${props.myId}`}>
-              <p className='card-footer desc_link'>Подробнее</p>
-            </Link>     */}
-
-          {/* <a href="/catalog" class="card-footer">Подробнее</a>         */}
+            <Card.Text><p className='price'>{props.price} руб.</p></Card.Text>           
+          </Card.Body>           
        </Card>           
    </div>   
   )

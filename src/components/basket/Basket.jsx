@@ -1,16 +1,18 @@
 import React from 'react'
 import ItemBasket from './ItemBasket'
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
 const Basket = (props) => {
   return (
-    <div>
+    <div  className='favor'>
       <div>
         <h1 className='col-md-8 offset-md-2'>Корзина</h1>
       </div>
-      <div>
+      <div className='basket'>
         {
           props.overlayProp.length>0?
-          <div>
+          <div className='row row-cols-1 justify-content-evenly row-cols-md-3 row-cols-sm-2 text-center basket_card'>
             {
               props.overlayProp.map(obj =>{
                 return(
@@ -25,19 +27,21 @@ const Basket = (props) => {
                 )
               })
             }
-            </div>
-
-            :<h1 className='col-md-8 offset-md-2'>Корзина пуста</h1>
-
-        }
-        <div className='row'>
-          <div className='col-md-8 offset-md-2'>
-            <p>Итог</p>
-            <p>{props.totalPrice}</p>
-            <button type='button' className='w-10 btn btn-lg btn-primary'>Забронировать</button>
-
           </div>
-        </div>
+            :<h1 className='col-md-8 offset-md-2'></h1>
+        }
+        {
+           props.overlayProp.length>0?
+
+           <Card className='itog'>
+            <Card.Body>
+              <Card.Title>Итого: {props.totalPrice} руб.</Card.Title>          
+              <Button variant="success">Забронировать</Button>
+            </Card.Body>
+          </Card>
+          :<h1 className='col-md-8 offset-md-2'></h1>
+        }
+        
       </div>
     </div>
   )
